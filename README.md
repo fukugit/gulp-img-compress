@@ -1,9 +1,6 @@
 ## Description
 This application give you feature of compressing image file.
 
-## Demo
-[This is demo page.](https://fukugit.github.io/css-flexbox-centering/)
-
 ## Usage
 1. Clone this repository.  
 2. To put image files you want to compress into the img-original folder.
