@@ -1,5 +1,5 @@
 /node_modules/
 /package-lock.json
 /dist/
-/img-original/
-/img-compressed/
+/img-original/*.jpg
+/img-compressed/*.jpg
