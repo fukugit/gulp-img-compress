@@ -3,3 +3,10 @@
 /dist/
 /img-original/*.jpg
 /img-compressed/*.jpg
+/img-resize/*.jpg
+/img-original/*.png
+/img-compressed/*.png
+/img-resize/*.png
+/img-original/*.gif
+/img-compressed/*.gif
+/img-resize/*.gif

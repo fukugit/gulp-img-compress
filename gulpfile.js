@@ -1,20 +1,30 @@
-// gulpプラグインの読みこみ
 var gulp = require('gulp');
 
-// 画像を圧縮するプラグインの読み込み
 var imagemin = require("gulp-imagemin");
-// var pngquant  = require('imagemin-pngquant');
 var mozjpeg  = require('imagemin-mozjpeg');
+var del = require('del');
 
-// imagesフォルダのpng,jpg画像を圧縮して、minified_imageフォルダに保存する
-gulp.task("default", function() {  // 「imageMinTask」という名前のタスクを登録
-    gulp.src("img-original/*.{png,jpg}")    // imagesフォルダ以下のpng,jpg画像を取得
+// To resize image files.
+var imageResize = require('gulp-image-resize');
+gulp.task('resize', function () {
+  gulp.src('img-original/*.{png,jpg,gif}')
+    .pipe(imageResize({
+      // for camera
+      width : 1500,
+      height : 997,
+      // for phone
+      //width : 1500,
+      //height : 1125,
+      crop : true,
+      upscale : false
+    }))
+    .pipe(gulp.dest('img-resize'));
+});
+
+// To compress image files.
+gulp.task("compress", function() {
+    gulp.src("img-resize/*.{png,jpg,gif}")
     .pipe(imagemin([
-       // pngquant({
-       //   quality: '65-80',
-       //   speed: 1,
-       //   floyd:0
-       // }),
        mozjpeg({
          quality:85,
          progressive: true
@@ -23,6 +33,33 @@ gulp.task("default", function() {  // 「imageMinTask」という名前のタス
        imagemin.optipng(),
        imagemin.gifsicle()
      ]
-    ))   // 画像の圧縮処理
-    .pipe(gulp.dest("img-compressed/"));    //保存
+    ))
+    .pipe(gulp.dest("img-compressed"));
   });
+
+// To remove All
+gulp.task('clean', ['clean:original', 'clean:compress', 'clean:resize']);
+
+// To remove original image files.
+gulp.task('clean:original', function (cb) {
+  del([
+    'img-original/*.{png,jpg,gif}',
+    '!img-original/README.md'
+  ], cb);
+});
+
+// To remove original image files.
+gulp.task('clean:compress', function (cb) {
+  del([
+    'img-compressed/*.{png,jpg,gif}',
+    '!img-compressed/README.md'
+  ], cb);
+});
+
+// To remove original image files.
+gulp.task('clean:resize', function (cb) {
+  del([
+    'img-resize/*.{png,jpg,gif}',
+    '!img-resize/README.md'
+  ], cb);
+});
