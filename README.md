@@ -2,7 +2,7 @@
 This application give you feature of compressing image file.
 
 ## Usage
-### Common  
+### Run before running the following command.  
 1. run ``npm install``  
 2. run ``brew install graphicsmagick``  
 
