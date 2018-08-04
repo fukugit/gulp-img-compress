@@ -9,12 +9,15 @@ var imageResize = require('gulp-image-resize');
 gulp.task('resize', function () {
   gulp.src('img-original/*.{png,jpg,gif}')
     .pipe(imageResize({
-      // for camera
+      ///////////////////////////// for camera
       width : 1500,
       height : 997,
-      // for phone
-      //width : 1500,
-      //height : 1125,
+      ///////////////////////////// for phone (Width)
+      // width : 1500,
+      // height : 1125,
+      ///////////////////////////// for phone (Length)
+      // width : 1500,
+      // height : 2000,
       crop : true,
       upscale : false
     }))
