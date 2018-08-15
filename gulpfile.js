@@ -46,7 +46,7 @@ gulp.task('clean', ['clean:original', 'clean:compress', 'clean:resize']);
 // To remove original image files.
 gulp.task('clean:original', function (cb) {
   del([
-    'img-original/*.{png,jpg,gif}',
+    'img-original/*.{png,jpg,gif,JPG}',
     '!img-original/README.md'
   ], cb);
 });
