@@ -26,7 +26,7 @@ gulp.task('resize', function () {
 
 // To compress image files.
 gulp.task("compress", function() {
-    gulp.src("img-resize/*.{png,jpg,gif}")
+    gulp.src("img-resize/*.{png,jpg,gif,JPG}")
     .pipe(imagemin([
        mozjpeg({
          quality:85,
