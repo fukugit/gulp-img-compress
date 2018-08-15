@@ -7,14 +7,14 @@ var del = require('del');
 // To resize image files.
 var imageResize = require('gulp-image-resize');
 gulp.task('resize', function () {
-  gulp.src('img-original/*.{png,jpg,gif}')
+  gulp.src('img-original/*.{png,jpg,gif,JPG}')
     .pipe(imageResize({
       ///////////////////////////// for camera
       width : 1500,
       height : 997,
       ///////////////////////////// for phone (Width)
-      // width : 1500,
-      // height : 1125,
+      //width : 1500,
+      //height : 1125,
       ///////////////////////////// for phone (Length)
       // width : 1500,
       // height : 2000,
