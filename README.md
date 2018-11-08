@@ -1,11 +1,22 @@
-## Description
-This application give you feature of compressing image file.
+# gulp-img-compress
+This application give you the feature of resize/compressing image file.
 
-## Usage
-### Run before running the following command.  
+## Description
+None  
+
+## Demo
+None.  
+
+## Dependency
+graphicsmagick(Should run the below command before using this application.)  
 1. run ``npm install``  
 2. run ``brew install graphicsmagick``  
 
+## Requirements
+npm  
+gulp
+
+## Usage
 ### To resize image files.
 1. To put image files you want to resize into the img-original folder.  
 2. run ``npx gulp resize``  
@@ -32,8 +43,16 @@ This application give you feature of compressing image file.
 1. run ``npx gulp clean:compress``  
 2. img-compressed files get removed.  
 
-
-##  Refer site
+## References
 [npm gulp-imagemin](https://www.npmjs.com/package/gulp-imagemin)  
 [refer site for creating this application](http://c-geru.com/as_blind_side/2017/04/gulpcompressedimage.html)  
 [mozjpeg](https://github.com/mozilla/mozjpeg)  
+
+## Licence
+MIT
+
+## Authors
+[fukugit](https://github.com/fukugit)
+
+## Conclusion
+None  

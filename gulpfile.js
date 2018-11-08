@@ -13,8 +13,8 @@ gulp.task('resize', function () {
       width : 1500,
       height : 997,
       ///////////////////////////// for phone (Width)
-      //width : 1500,
-      //height : 1125,
+      // width : 1500,
+      // height : 1125,
       ///////////////////////////// for phone (Length)
       // width : 1500,
       // height : 2000,
