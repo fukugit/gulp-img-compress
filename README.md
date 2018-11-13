@@ -1,5 +1,5 @@
 # gulp-img-compress
-This application give you the feature of resize/compressing image file.
+This application give you the feature of resize/compressing image file.  
 <br/>
 
 ## Description
@@ -68,11 +68,11 @@ img-compressed
 <br/>
 
 ## Licence
-MIT
+MIT  
 <br/>
 
 ## Authors
-[fukugit](https://github.com/fukugit)
+[fukugit](https://github.com/fukugit)  
 <br/>
 
 ## Conclusion
