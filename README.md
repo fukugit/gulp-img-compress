@@ -4,9 +4,9 @@ This application give you the feature of resize/compressing image file.
 
 ## Description
 This application provides the following features.  
-1. resize image.  
-2. compress image.  
-3. remove image.  
+1. Resize image, which is ``npx gulp resize``.  
+2. Compress image, which is ``npx gulp compress``.  
+3. Remove image, which is ``npx gulp clean``.  
 <br/>
 
 ## Demo
@@ -30,13 +30,13 @@ img-compressed
 
 ## Usage
 ### To resize image files.
-1. To put image files you want to resize into the img-original folder.  
+1. To put image files you want to resize, into the img-original folder.  
 2. run ``npx gulp resize``  
 3. you can see img-resize folder. The resized image files will be there.
 <br/>
 
 ### To compress image files.
-1. To put image files you want to compress into the img-resize folder.  
+1. To put image files you want to compress, into the img-resize folder.  
 2. run ``npx gulp compress``  
 3. you can see img-compressed folder. The compressed image files will be there.
 <br/>
