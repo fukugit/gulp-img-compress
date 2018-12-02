@@ -76,4 +76,4 @@ MIT
 <br/>
 
 ## Conclusion
-None  
+I believe this feature is more convenient than such web tool as it compress image files.  
