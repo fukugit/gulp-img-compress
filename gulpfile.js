@@ -10,8 +10,10 @@ gulp.task('resize', function () {
   gulp.src('img-original/*.{png,jpg,gif,JPG}')
     .pipe(imageResize({
       ///////////////////////////// for camera
-      width : 1500,
-      height : 997,
+      // width : 1500,
+      // height : 997,
+      width : 900,
+      height : 598,
       ///////////////////////////// for phone (Width)
       // width : 1500,
       // height : 1125,
