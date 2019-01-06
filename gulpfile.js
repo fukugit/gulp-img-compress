@@ -12,8 +12,8 @@ gulp.task('resize', function () {
       ///////////////////////////// for camera
       // width : 1500,
       // height : 997,
-      width : 900,
-      height : 598,
+      width : 1400,
+      height : 930,
       ///////////////////////////// for phone (Width)
       // width : 1500,
       // height : 1125,
